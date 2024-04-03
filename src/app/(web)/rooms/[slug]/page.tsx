@@ -102,7 +102,7 @@ const RoomDetails = (props: { params: { slug: string } }) => {
                 {room.name} ({room.dimension})
               </h2>
               <div className='flex my-11'>
-                {room.offeredAmenities.map(amenity => (
+                {room.offeredAmenities?.map(amenity => (
                   <div
                     key={amenity._key}
                     className='md:w-44 w-fit text-center px-2 md:px-0 h-20 md:h-40 mr-3 bg-[#eff0f2] dark:bg-gray-800 rounded-lg grid place-content-center'
@@ -121,7 +121,7 @@ const RoomDetails = (props: { params: { slug: string } }) => {
               <div className='mb-11'>
                 <h2 className='font-bold text-3xl mb-2'>Offered Amenities</h2>
                 <div className='grid grid-cols-2'>
-                  {room.offeredAmenities.map(amenity => (
+                  {room.offeredAmenities?.map(amenity => (
                     <div
                       key={amenity._key}
                       className='flex items-center md:my-0 my-1'
