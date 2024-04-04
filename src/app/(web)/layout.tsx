@@ -42,7 +42,6 @@ export default function RootLayout({
             <main className='font-normal'>
               <Header />
               {children}
-              <Footer />
             </main>
           </ThemeProvider>
         </NextAuthProvider>
